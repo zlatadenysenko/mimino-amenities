@@ -40,13 +40,6 @@ button {
 .amenities {
   padding-top: 32px;
   padding-bottom: 32px;
-  /* @media screen and (min-width: 1280px) {
-    padding-bottom: 48px;
-  }
-  @media screen and (min-width: 1024px) {
-    padding-top: 48px;
-    padding-bottom: 40px; */
-  }
 }
 
 .amenities__title {
@@ -85,7 +78,8 @@ button {
   margin-bottom: 16px;
 }
 
-.amenities-list__text {
+.amenities-list__wrap {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -135,4 +129,50 @@ button {
   margin-left: 12px;
   vertical-align: middle;
   fill: #c79002;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  .amenities {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  .amenities__description {
+    width: 757px;
+  }
+  .amenities-list__wrap {
+    gap: 80px;
+    flex-wrap: nowrap;
+  }
+  .amenities-list__text {
+    width: 400px;
+  }
+  .amenities-nav {
+    align-items: flex-end;
+    justify-content: center;
+    gap: 32px;
+  }
+  .amenities__btn {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  .amenities-nav__link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-left: 85px;
+    padding-right: 199px;
+  }
+  .amenities {
+    padding-bottom: 48px;
+  }
+  .amenities-list__wrap {
+    gap: 159px;
+  }
 }
