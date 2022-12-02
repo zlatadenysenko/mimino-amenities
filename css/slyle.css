@@ -1,3 +1,67 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Light.ttf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FilmP3";
+  src: url(../fonts/FilmP3Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url(../fonts/TimesNewRomanPSMT.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TimesNewRoman";
+  src: url(../fonts/TimesNewRomanPS-BoldMT.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
 body {
   background-color: #fffdee;
   color: #7a7a7a;
@@ -43,6 +107,7 @@ button {
 }
 
 .amenities__title {
+  font-family: "TimesNewRoman";
   font-weight: 400;
   font-size: 32px;
   line-height: 1.16;
@@ -53,6 +118,7 @@ button {
 }
 
 .amenities__description {
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -69,6 +135,7 @@ button {
 }
 
 .amenities-list__title {
+  font-family: "TimesNewRoman";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
@@ -84,6 +151,7 @@ button {
   flex-wrap: wrap;
   gap: 16px;
 
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -95,6 +163,7 @@ button {
   min-width: 384px;
   height: 64px;
 
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -118,6 +187,7 @@ button {
 }
 
 .amenities-nav__link {
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
@@ -147,8 +217,14 @@ button {
     gap: 80px;
     flex-wrap: nowrap;
   }
+  .amenities-list__wrap-extra {
+    gap: 30px;
+  }
   .amenities-list__text {
     width: 400px;
+  }
+  .amenities-list__text-extra {
+    width: 450px;
   }
   .amenities-nav {
     align-items: flex-end;
@@ -158,6 +234,7 @@ button {
   .amenities__btn {
     font-size: 24px;
     margin-top: 40px;
+    min-width: 434px;
   }
   .amenities-nav__link {
     font-size: 20px;
@@ -174,5 +251,11 @@ button {
   }
   .amenities-list__wrap {
     gap: 159px;
+  }
+  .amenities-list__wrap-extra {
+    gap: 64px;
+  }
+  .amenities-list__text-extra {
+    width: 495px;
   }
 }
