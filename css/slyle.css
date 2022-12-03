@@ -177,6 +177,15 @@ button {
   border-radius: 25px;
 
   margin-top: 32px;
+
+  transition: background-color 250ms linear, color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.amenities__btn:hover,
+.amenities__btn:focus {
+  color: #000000;
+  background-color: #f3c653;
 }
 
 .amenities-nav {
@@ -194,12 +203,26 @@ button {
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #c79002;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.amenities-nav__link:hover,
+.amenities-nav__link:focus {
+  color: #f3c653;
 }
 
 .amenities-nav__icon {
   margin-left: 12px;
   vertical-align: middle;
-  fill: #c79002;
+  fill: currentColor;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.amenities-nav__icon:hover,
+.amenities-nav__icon:focus {
+  fill: #f3c653;
 }
 
 @media screen and (min-width: 1024px) {
